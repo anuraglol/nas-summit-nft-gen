@@ -2,7 +2,7 @@ import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
 
 export const config = {
-  runtime: "experimental-edge",
+  runtime: "edge",
 };
 
 const font = fetch(
@@ -13,7 +13,7 @@ export default async function handler(req: NextRequest) {
   const { searchParams } = req.nextUrl;
   const name = searchParams.get("name");
 
-  const fontSize = (name as string).length > 30 ? "48px" : "52px";
+  const fontSize = (name as string).length > 30 ? "46px" : "52px";
 
   return new ImageResponse(
     (
