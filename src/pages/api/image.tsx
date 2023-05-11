@@ -11,7 +11,7 @@ const font = fetch(
 
 export default async function handler(req: NextRequest) {
   const { searchParams } = req.nextUrl;
-  const name = searchParams.get("name");
+  const name = searchParams.get("name") || "John Doe";
 
   const fontSize = (name as string).length > 30 ? "46px" : "52px";
 
@@ -43,7 +43,7 @@ export default async function handler(req: NextRequest) {
             textTransform: "uppercase",
           }}
         >
-          {name || "John Doe"}
+          {name}
         </div>
       </div>
     ),
