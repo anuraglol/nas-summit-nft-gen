@@ -22,7 +22,7 @@ export default async function handler(req: NextRequest) {
           width: "100%",
           height: "100%",
           backgroundImage:
-            "url(https://res.cloudinary.com/ddum5vpp3/image/upload/v1683800446/NFT_Design_kvsr45.svg)",
+            "url(https://res.cloudinary.com/ddum5vpp3/image/upload/v1684063269/NFT_Design_1_ikaxev.svg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
@@ -41,6 +41,7 @@ export default async function handler(req: NextRequest) {
             display: "flex",
             alignItems: "center",
             textTransform: "uppercase",
+            color: "#402F52",
           }}
         >
           {name}
