@@ -22,7 +22,7 @@ export default async function handler(req: NextRequest) {
           width: "100%",
           height: "100%",
           backgroundImage:
-            "url(https://res.cloudinary.com/ddum5vpp3/image/upload/v1684063269/NFT_Design_1_ikaxev.svg)",
+            "url(https://res.cloudinary.com/ddum5vpp3/image/upload/v1684343199/NFT_Design_loaqkr.svg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
